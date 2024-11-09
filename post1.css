@@ -150,7 +150,13 @@ transition: color 0.3s ease;
 /*--------------------------------------------------------------------------------------------------------------------------------------------/*
 
 
+
 /* Back Button Styles */
+.content-container {
+    position: relative; /* Make the parent container a positioning context */
+    padding: 30px; /* Adjust padding as needed */
+}
+
 .back-link {
     display: inline-block;
     padding: 10px 20px;
@@ -160,10 +166,10 @@ transition: color 0.3s ease;
     font-weight: 500;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 10; /* Ensure it's on top of other elements */
+    position: absolute; /* Position relative to content-container */
+    top: 20px; /* Distance from the top of the content container */
+    right: 20px; /* Distance from the right side of the content container */
+    z-index: 1000; /* Ensure it's on top of other elements */
 }
 
 .back-link:hover {
