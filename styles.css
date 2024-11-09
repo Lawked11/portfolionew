@@ -70,6 +70,7 @@ nav ul li a {
         font-size: 1.2em; /* Slightly larger font size */
         margin: 10px 0;
         animation: slideIn 1.5s ease-in-out; /* Animation effect */
+        
     }
 
     /* Keyframes for Animations */
@@ -116,6 +117,7 @@ nav ul li a {
     font-weight: 700; /* Bold headers for emphasis */
     text-transform: uppercase; /* Uppercase for a more modern look */
     letter-spacing: 2px; /* Added letter-spacing for clarity */
+    
 }
 
 /* For paragraphs or additional text inside these sections */
@@ -128,12 +130,14 @@ nav ul li a {
     margin: 15px auto; /* Center the text block with margin */
     padding: 0 20px; /* Padding to prevent text from touching the sides */
     color: #333; /* Set a soft dark color for text */
+    text-align: justify; /* Justify text within the text block */
 }
 
     /* Skills List Styles */
     .skills-summary ul {
         list-style: none; /* Remove bullet points */
         padding: 0; /* Remove padding */
+        
     }
 
     .skills-summary li {

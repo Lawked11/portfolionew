@@ -38,6 +38,7 @@
 .service-item p {
     font-size: 1.1rem;
     color: #666;
+    text-align: justify; /* Justify text alignment */
 }
 
 
@@ -109,12 +110,14 @@ transition: color 0.3s ease;
     margin: 20px 0;
     color: #1a055a; /* Aesthetic color */
     animation: fadeIn 1s ease-in-out; /* Animation effect */
+    
 }
 
 .animated-text {
     font-size: 1.2em; /* Slightly larger font size */
     margin: 10px 0;
     animation: slideIn 1.5s ease-in-out; /* Animation effect */
+    
 }
 
 /* Keyframes for Animations */

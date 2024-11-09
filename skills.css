@@ -36,27 +36,27 @@
 
 /* Skill level widths */
 .html-level {
-    width: 100%; /* Example width for HTML skill */
+    width: 55%; /* Example width for HTML skill */
     background: #F16529; /* Color for HTML */
 }
 
 .css-level {
-    width: 100%; /* Example width for CSS skill */
+    width: 50%; /* Example width for CSS skill */
     background: #1a055a; /* Color for CSS */
 }
 
 .js-level {
-    width: 100%; /* Example width for JavaScript skill */
+    width: 30%; /* Example width for JavaScript skill */
     background: #F7DF1E; /* Color for JavaScript */
 }
 
 .react-level {
-    width: 100%; /* Example width for React skill */
+    width: 80%; /* Example width for React skill */
     background: #61DAFB; /* Color for React */
 }
 
 .nodejs-level {
-    width: 100%; /* Example width for Node.js skill */
+    width: 70%; /* Example width for Node.js skill */
     background: #68A063; /* Color for Node.js */
 }
 
@@ -134,6 +134,8 @@ transition: color 0.3s ease;
     font-size: 1.2em; /* Slightly larger font size */
     margin: 10px 0;
     animation: slideIn 1.5s ease-in-out; /* Animation effect */
+    
+    
 }
 
 /* Keyframes for Animations */

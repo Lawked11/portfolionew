@@ -1,107 +1,80 @@
-/* Clients Section Styles */
-
-
-.clients {
+/* Timeline Section Styles */
+.timeline {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content horizontally */
     justify-content: flex-start; /* Align content to the top of the container */
     text-align: center; /* Center text */
-    padding: 20px;
+    padding: 40px; /* Increase padding for more space */
     background-color: #e7f3ff; /* Same background color as services */
     width: 100%; /* Full width */
     min-height: 100vh; /* Full viewport height */
     margin: 0;
     box-sizing: border-box;
-    
 }
 
 /* Title Styling */
 .animated-title {
-    font-size: 36px;
+    font-size: 48px; /* Larger font size */
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increase space below title */
     color: #1a055a;
-    padding-top: 20px;
+    padding-top: 30px; /* Increase padding at the top */
 }
 
-/* Clients Section Styles */
-.clients {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: flex-start;
-    text-align: center; 
-    padding: 20px;
-    background-color: #e7f3ff;
-    width: 100%; 
-    min-height: 100vh;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* Title Styling */
-.animated-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #1a055a;
-    padding-top: 20px;
-}
-
-/* Client Item Styling */
-.client-item {
+/* Timeline Item Styling */
+.timeline-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    max-width: 600px;
-    margin: 20px 0;
-    padding: 20px;
+    max-width: 800px; /* Increase max width */
+    width: 90%; /* Allow it to scale down on smaller screens */
+    margin: 30px 0; /* Increase margin between items */
+    padding: 40px; /* Larger padding */
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Larger shadow */
     height: auto;  /* Let the container grow to fit content */
     box-sizing: border-box;
     transition: transform 0.3s ease;
+    
 }
 
-.client-item:hover {
-    transform: translateY(-10px);
+.timeline-item:hover {
+    transform: translateY(-15px); /* Slightly more noticeable hover effect */
 }
 
 /* Full-width Client Logo */
-.client-item img {
+.timeline-item img {
     width: 100%;
-    max-height: 200px;  /* Keep the height reasonable */
+    max-height: 250px;  /* Increase image size */
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px; /* Increase margin between image and text */
 }
 
-/* Client Name */
-.client-item h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 10px 0;
+/* Timeline Name */
+.timeline-item h2 {
+    font-size: 2rem; /* Larger font size */
+    color: #1a055a;
+    margin: 20px 0; /* More spacing between name and description */
 }
 
-/* Client Description */
-.client-item p {
-    font-size: 1.1rem;
-    color: #666;
+/* Timeline Description */
+.timeline-item p {
+    font-size: 1.3rem; /* Larger font size for better readability */
+    color: #000000;
     text-align: center;
-    padding: 0 10px;  /* Optional: Add padding to keep text away from edges */
+    padding: 0 20px;  /* More padding around the text */
     margin: 0;  /* Prevent additional margins that could cause overflow */
     overflow-wrap: break-word;  /* Ensure long words are wrapped */
     word-wrap: break-word;  /* For older browsers */
     height: auto;  /* Allow paragraph height to adjust as needed */
-    max-height: 150px;  /* Optional: Limit height to avoid overflow if needed */
+    max-height: 180px;  /* Optional: Limit height to avoid overflow if needed */
     overflow-y: auto;  /* Allow scrolling if text overflows */
+    text-align: justify; /* Justify text alignment */
 }
-
-
-/*--------------------------------------------------------------------------------------------------------------------------------------------/*
 
 /* Base Styles */
 body {
@@ -111,6 +84,7 @@ body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     background: #f7f9fc; /* Light background for the whole page */
+    
 }
 
 /* Header Styles */
@@ -118,9 +92,9 @@ header {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space items evenly */
-    padding: 10px 20px; /* Add padding to the header */
+    padding: 15px 30px; /* Larger padding */
     background: #1a055a; /* White background for the header */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
 }
 
 /* Navigation Styles */
@@ -131,7 +105,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px; /* Spacing between links */
+    margin: 0 20px; /* Increase space between links */
 }
 
 nav ul li a {
@@ -139,42 +113,46 @@ nav ul li a {
     color: #ffffff; /* Link color */
     font-weight: 500; /* Medium font weight */
     transition: color 0.3s; /* Smooth transition for color */
+    font-size: 1.1rem; /* Larger font size */
+    
 }
 
 nav ul li a:hover {
     color: #ff5a5a; /* Darker shade on hover */
 }
+
 /* Active Link Styles */
 nav ul li a.active {
-color: #ff5a5a; /* Red color for active link */
-font-weight: bold; /* Optional: Make it bold for emphasis */
+    color: #ff5a5a; /* Red color for active link */
+    font-weight: bold; /* Optional: Make it bold for emphasis */
 }
 
 /* Ensure smooth transition */
 nav ul li a {
-transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
-
-
 
 /* Hero Section Styles */
 .hero {
     text-align: center;
-    padding: 50px 20px; /* Added padding for spacing */
+    padding: 80px 40px; /* Added larger padding for spacing */
     background: #c7dbf0; /* Light blue background */
+    
 }
 
 .animated-title {
-    font-size: 2.5em; /* Larger font size */
-    margin: 20px 0;
+    font-size: 3.5em; /* Larger font size */
+    margin: 30px 0; /* More space around the title */
     color: #1a055a; /* Aesthetic color */
     animation: fadeIn 1s ease-in-out; /* Animation effect */
+    
 }
 
 .animated-text {
-    font-size: 1.2em; /* Slightly larger font size */
-    margin: 10px 0;
+    font-size: 1.5em; /* Slightly larger font size */
+    margin: 15px 0;
     animation: slideIn 1.5s ease-in-out; /* Animation effect */
+    
 }
 
 /* Keyframes for Animations */
