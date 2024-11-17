@@ -1,0 +1,266 @@
+/* Contact Section Styles */
+.contact {
+    text-align: center; /* Center the text */
+    background: #e7f3ff; /* Light blue background for the contact section */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex; /* Use flexbox to center the content */
+    flex-direction: column; /* Align content in a column */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove margin to avoid extra space */
+    overflow: hidden; /* Prevent any scrolling */
+}
+
+/* Title Styling */
+.contact h1 {
+    font-size: 2em; /* Large title font size */
+    color: #1a055a; /* Title color */
+}
+
+/* Paragraph Styling */
+.contact p {
+    font-size: 1.2em; /* Font size for instructions */
+    margin-bottom: 20px; /* Margin below paragraph */
+}
+
+/* Contact Form Styles */
+.contact-form {
+    width: 80%; /* Set width to a reasonable percentage to prevent overflow */
+    max-width: 900px; /* Max width to prevent stretching too wide */
+    margin: 0 auto; /* Center the form */
+    background: #fff; /* White background for the form */
+    padding: 50px; /* Large padding inside the form */
+    border-radius: 5px; /* Rounded corners for the form */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Larger shadow effect */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin: 15px 0; /* Margin around each form field */
+}
+
+/* Label Styles */
+label {
+    display: block; /* Make label a block element */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: 500; /* Bold labels */
+}
+
+/* Input and Textarea Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width for inputs and text area */
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #1a055a; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    font-size: 1em; /* Font size for input fields */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Placeholder Styles */
+input::placeholder,
+textarea::placeholder {
+    color: #1a055a; /* Placeholder color */
+}
+
+/* Submit Button Styles */
+.submit-button {
+    background: #031529; /* Blue background for button */
+    color: white; /* White text for button */
+    border: none; /* No border for button */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size for button */
+    transition: background 0.3s; /* Transition for background color */
+}
+
+
+/* Contact Form Styles */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact label {
+    margin: 10px 0 5px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    margin-top: 15px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------/*
+
+/* Header Top with Navigation and Social Media Links */
+.header-top {
+    display: flex;
+    justify-content: space-between; /* Space out the navigation and social links */
+    align-items: center; /* Vertically center the items */
+    padding: 20px; /* Add padding around the header content */
+    background-color: #f1f1f1; /* Optional: background color for the header */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between navigation links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Link color */
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.social-links-container {
+    display: flex;
+    justify-content: flex-end; /* Align social icons to the right */
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Specific Social Media Icon Styles */
+.social-icon.facebook {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg');
+}
+
+.social-icon.instagram {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+}
+
+.social-icon.x {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e8/X_logo_2023.svg');
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------/*
+
+
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    line-height: 1.6;
+    color: #000000; /* Text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: #f7f9fc; /* Light background for the whole page */
+}
+
+/* Header Styles */
+header {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    padding: 19px 20px; /* Add padding to the header */
+    background: #1a055a; /* White background for the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Link color */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+nav ul li a:hover {
+    color: #ff5a5a; /* Darker shade on hover */
+}
+/* Active Link Styles */
+nav ul li a.active {
+color: #ff5a5a; /* Red color for active link */
+font-weight: bold; /* Optional: Make it bold for emphasis */
+}
+
+/* Ensure smooth transition */
+nav ul li a {
+transition: color 0.3s ease;
+}
+
+
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 50px 20px; /* Added padding for spacing */
+    background: #c7dbf0; /* Light blue background */
+}
+
+.animated-title {
+    font-size: 2.5em; /* Larger font size */
+    margin: 20px 0;
+    color: #1a055a; /* Aesthetic color */
+    animation: fadeIn 1s ease-in-out; /* Animation effect */
+}
+
+.animated-text {
+    font-size: 1.2em; /* Slightly larger font size */
+    margin: 10px 0;
+    animation: slideIn 1.5s ease-in-out; /* Animation effect */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Move up */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px); /* Slide in from left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Final position */
+    }
+}

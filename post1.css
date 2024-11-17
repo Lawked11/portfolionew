@@ -1,0 +1,217 @@
+/* Styling the overall post container */
+.post1-post {
+    background-color: #e7f3ff; /* Set background color */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any padding */
+    box-sizing: border-box; /* Ensure padding doesn't affect size */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center the text */
+}
+
+/* New container for title and description */
+.post1-content {
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    max-width: 800px; /* Limit width of the container */
+    width: 100%; /* Full width within the max width */
+    max-height: 80vh; /* Limit the height of the container */
+    overflow: auto; /* Add scroll if the content exceeds max height */
+    word-wrap: break-word; /* Ensure long words break to fit within the container */
+}
+
+/* Styling for the title */
+.animated-title {
+    font-size: 2.5em; /* Large font size for the title */
+    font-weight: 700; /* Bold font for the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Styling for the blog content */
+.blog-content {
+    font-size: 1.2em; /* Slightly larger font for the blog content */
+    line-height: 1.6; /* Space between lines */
+    color: #333; /* Dark color for readability */
+    margin-top: 10px; /* Space between content and title */
+    max-width: 100%; /* Ensure text does not overflow the container */
+    word-wrap: break-word; /* Break long words if necessary */
+    text-align: justify; /* Justify text alignment */
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------/*
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    line-height: 1.6;
+    color: #000000; /* Text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: #f7f9fc; /* Light background for the whole page */
+}
+
+/* Header Styles */
+header {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    padding: 10px 20px; /* Add padding to the header */
+    background: #1a055a; /* White background for the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Link color */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+nav ul li a:hover {
+    color: #ff5a5a; /* Darker shade on hover */
+}
+/* Active Link Styles */
+nav ul li a.active {
+color: #ff5a5a; /* Red color for active link */
+font-weight: bold; /* Optional: Make it bold for emphasis */
+}
+
+/* Ensure smooth transition */
+nav ul li a {
+transition: color 0.3s ease;
+}
+
+
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 50px 20px; /* Added padding for spacing */
+    background: #c7dbf0; /* Light blue background */
+}
+
+.animated-title {
+    font-size: 2.5em; /* Larger font size */
+    margin: 20px 0;
+    color: #1a055a; /* Aesthetic color */
+    animation: fadeIn 1s ease-in-out; /* Animation effect */
+}
+
+.animated-text {
+    font-size: 1.2em; /* Slightly larger font size */
+    margin: 10px 0;
+    animation: slideIn 1.5s ease-in-out; /* Animation effect */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Move up */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px); /* Slide in from left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Final position */
+    }
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------/*
+
+
+
+/* Back Button Styles */
+.content-container {
+    position: relative; /* Make the parent container a positioning context */
+    padding: 30px; /* Adjust padding as needed */
+}
+
+.back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a055a; /* Same color as header */
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: absolute; /* Position relative to content-container */
+    top: 20px; /* Distance from the top of the content container */
+    right: 20px; /* Distance from the right side of the content container */
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.back-link:hover {
+    background-color: #ff5a5a; /* Change to hover color */
+}
+
+/* General Body and Layout */
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ff5a5a;
+}
+
+.post1-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.animated-title {
+    font-size: 2.5em;
+    color: #1a055a;
+}
+
+.blog-content {
+    font-size: 1.2em;
+    color: #333;
+}

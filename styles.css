@@ -1,0 +1,171 @@
+    /* Base Styles */
+    body {
+        font-family: 'Poppins', sans-serif; /* Use Poppins font */
+        line-height: 1.6;
+        color: #000000; /* Text color */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        background: #f7f9fc; /* Light background for the whole page */
+    }
+
+    /* Header Styles */
+    header {
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Center items vertically */
+        justify-content: space-between; /* Space items evenly */
+        padding: 10px 20px; /* Add padding to the header */
+        background: #1a055a; /* White background for the header */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    /* Navigation Styles */
+    nav ul {
+        list-style: none; /* Remove bullet points from the list */
+        padding: 0; /* Remove padding */
+        display: flex; /* Flexbox for horizontal alignment */
+    }
+
+    nav ul li {
+        margin: 0 15px; /* Spacing between links */
+    }
+
+    nav ul li a {
+        text-decoration: none; /* Remove underline */
+        color: #ffffff; /* Link color */
+        font-weight: 500; /* Medium font weight */
+        transition: color 0.3s; /* Smooth transition for color */
+    }
+
+    nav ul li a:hover {
+        color: #ff5a5a; /* Darker shade on hover */
+    }
+   /* Active Link Styles */
+nav ul li a.active {
+    color: #ff5a5a; /* Red color for active link */
+    font-weight: bold; /* Optional: Make it bold for emphasis */
+}
+
+/* Ensure smooth transition */
+nav ul li a {
+    transition: color 0.3s ease;
+}
+
+
+
+    /* Hero Section Styles */
+    .hero {
+        text-align: center;
+        padding: 50px 20px; /* Added padding for spacing */
+        background: #c7dbf0; /* Light blue background */
+    }
+
+    .animated-title {
+        font-size: 2.5em; /* Larger font size */
+        margin: 20px 0;
+        color: #1a055a; /* Aesthetic color */
+        animation: fadeIn 1s ease-in-out; /* Animation effect */
+    }
+
+    .animated-text {
+        font-size: 1.2em; /* Slightly larger font size */
+        margin: 10px 0;
+        animation: slideIn 1.5s ease-in-out; /* Animation effect */
+        
+    }
+
+    /* Keyframes for Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px); /* Move up */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Final position */
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-20px); /* Slide in from left */
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0); /* Final position */
+        }
+    }
+
+
+    
+/*--------------------------------------------------------------------------------------------------------------------------------------------/*
+
+   /* Section Styles */
+.introduction,
+.skills-summary,
+.contact {
+    text-align: center; /* Center the text */
+    margin: 40px 0; /* Increase margin for better section spacing */
+}
+
+.introduction h2,
+.skills-summary h2,
+.contact h2 {
+    font-size: 2em; /* Slightly larger font size for section headers */
+    margin: 30px 0; /* Increased margin above and below for better separation */
+    color: #1a055a; /* Aesthetic color for headers */
+    font-weight: 700; /* Bold headers for emphasis */
+    text-transform: uppercase; /* Uppercase for a more modern look */
+    letter-spacing: 2px; /* Added letter-spacing for clarity */
+    
+}
+
+/* For paragraphs or additional text inside these sections */
+.introduction p,
+.skills-summary p,
+.contact p {
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+    line-height: 1.6; /* Increased line height for better readability */
+    max-width: 850px; /* Set a max width for better text alignment */
+    margin: 15px auto; /* Center the text block with margin */
+    padding: 0 20px; /* Padding to prevent text from touching the sides */
+    color: #333; /* Set a soft dark color for text */
+    text-align: justify; /* Justify text within the text block */
+}
+
+    /* Skills List Styles */
+    .skills-summary ul {
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+        
+    }
+
+    .skills-summary li {
+        font-size: 1.1em; /* Slightly larger font size for skills */
+    }
+
+    /* CTA Button Styles */
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #1a055a; /* Button color */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        margin-top: 20px; /* Space above button */
+    }
+
+    .cta-button:hover {
+        background: #1a055a; /* Darker shade on hover */
+        transform: scale(1.05); /* Scale up button on hover */
+    }
+
+
+
+
+    
+
+
+
+

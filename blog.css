@@ -1,0 +1,165 @@
+/* Blog Section Styles */
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px;
+    background: #e7f3ff;
+    width: 100%; /* Ensure full width without causing overflow */
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Title Styling */
+.animated-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a055a;
+    padding-top: 20px;
+}
+
+/* Description */
+.blog .description {
+    max-width: 600px;
+    font-size: 1.2em;
+    color: #1a055a;
+    margin-top: 20px;
+}
+
+/* Form Styling */
+.blog form {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+/* Form input and textarea styling */
+.blog input, .blog textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button styling */
+.blog button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a055a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+
+.blog button:hover {
+    background-color: #5c2c8e;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------/*
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    line-height: 1.6;
+    color: #000000; /* Text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: #f7f9fc; /* Light background for the whole page */
+}
+
+/* Header Styles */
+header {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    padding: 10px 20px; /* Add padding to the header */
+    background: #1a055a; /* White background for the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Link color */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+nav ul li a:hover {
+    color: #ff5a5a; /* Darker shade on hover */
+}
+/* Active Link Styles */
+nav ul li a.active {
+color: #ff5a5a; /* Red color for active link */
+font-weight: bold; /* Optional: Make it bold for emphasis */
+}
+
+/* Ensure smooth transition */
+nav ul li a {
+transition: color 0.3s ease;
+}
+
+
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 50px 20px; /* Added padding for spacing */
+    background: #c7dbf0; /* Light blue background */
+}
+
+.animated-title {
+    font-size: 2.5em; /* Larger font size */
+    margin: 20px 0;
+    color: #1a055a; /* Aesthetic color */
+    animation: fadeIn 1s ease-in-out; /* Animation effect */
+}
+
+.animated-text {
+    font-size: 1.2em; /* Slightly larger font size */
+    margin: 10px 0;
+    animation: slideIn 1.5s ease-in-out; /* Animation effect */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Move up */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px); /* Slide in from left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Final position */
+    }
+}
