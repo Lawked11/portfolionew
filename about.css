@@ -147,3 +147,42 @@ transition: color 0.3s ease;
         transform: translateX(0); /* Final position */
     }
 }
+
+
+/* Image Container Styles */
+.image-container {
+    margin: 30px auto; /* Center the image section */
+    display: flex;
+    justify-content: center;
+    position: relative; /* Enable positioning for effects */
+}
+
+.profile-pic {
+    width: 250px; /* Set image width */
+    height: 250px; /* Set image height */
+    border-radius: 50%; /* Circular image */
+    border: 8px solid #e7f3ff; /* New border color matching the background */
+    object-fit: cover; /* Make the image fill the circular container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for shadow */
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    animation: popIn 1s ease-out forwards; /* Pop-out animation for picture */
+}
+
+/* Pop-out animation for the image */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); /* Start smaller */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* End at normal size */
+    }
+}
+
+/* Hover effect with simple shadow animation */
+.profile-pic:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 20px #1a055a; /* Simple shadow on hover */
+}
