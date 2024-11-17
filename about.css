@@ -21,36 +21,6 @@ h2 {
     font-size: 2em; /* Slightly smaller font size for the second heading */
 }
 
-.profile-photo-about {
-    width: 200px; /* Set width of the photo */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px 0; /* Margin above and below the photo */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Cool shadow effect */
-    animation: fadeIn 1s ease-in-out; /* Animation effect for the photo */
-    position: relative; /* Position for pseudo-element */
-    border: 5px solid transparent; /* Transparent border */
-    background-image: linear-gradient(45deg, #00b4d8, #0077b6); /* Gradient border effect */
-    background-clip: content-box; /* Clip the background to the content */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover transition */
-}
-
-.profile-photo-about::before {
-    content: ""; /* Add content to create the paper effect */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2px dashed #333; /* Dashed border to mimic paper edge */
-    border-radius: 10px; /* Slightly rounded corners for a natural torn effect */
-    z-index: -1; /* Place the dashed border behind the image */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth effect */
-}
-
-.profile-photo-about:hover {
-    transform: scale(1.05); /* Slightly enlarge the photo on hover */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover */
-}
 
 .animated-title {
     animation: fadeIn 1.5s ease-in-out; /* Animation for titles */
