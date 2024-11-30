@@ -44,6 +44,7 @@
 .project-description {
     font-size: 1.1em; /* Slightly larger font size for descriptions */
     margin: 10px 0; /* Margin for spacing */
+    text-align: justify;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------/*

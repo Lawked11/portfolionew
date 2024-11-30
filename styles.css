@@ -123,7 +123,7 @@ nav ul li a {
     max-width: 850px; /* Set a max width for better text alignment */
     margin: 15px auto; /* Center the text block with margin */
     padding: 0 20px; /* Padding to prevent text from touching the sides */
-    color: #333; /* Set a soft dark color for text */
+    color: #000000; /* Set a soft dark color for text */
     text-align: justify; /* Justify text within the text block */
     opacity: 0; /* Initial state for animation */
     animation: fadeIn 2s forwards; /* Apply fadeIn animation to text */
